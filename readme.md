@@ -34,3 +34,15 @@ console.log("goodbye")
 |---------|---------|
 | thing1 | thing2 |
 | yadda1 | yadda2 |
+
+
+
+## Color Pallette
+
+// #545348
+// #D3B9A5
+// #5D2523
+// #9D5642
+// #182528
+
+
