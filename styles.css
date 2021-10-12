@@ -1,24 +1,93 @@
 /********************************
-*** HEADING
+*** Body
 ***********************************/
-
-h1 {
-    text-align: center;
-    color: brown;
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOzme0xFwSTs9lnwpJswBXRcMR3A89GNVoxw&usqp=CAU");
 }
 
+#main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: black;
+  height: 700px;
+  width: 100%;
+  margin: 10px auto;
+}
 
 /********************************
 *** HEADING
 ***********************************/
 
+h1 {
+  text-align: center;
+  color: brown;
+}
+
+/********************************
+*** Question
+***********************************/
 
 #question {
-    width: 70%;
-    padding: 30px;
-    border: 3px solid brown;
-    background-color: brown;
-    color: white;
-    font-size: 20px;
-    margin: 10px auto;
+  width: 70%;
+  padding: 30px;
+  border: 3px solid brown;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+/********************************
+*** Answer
+***********************************/
+
+#answer {
+  width: 50%;
+  margin: 10px auto;
+  color: white;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#answer ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#answer ul li {
+  width: 40%;
+  height: 40px;
+  background-color: purple;
+  padding-top: 15px;
+  text-align: center;
+  margin: 5px;
+  font-weight: bolder;
+}
+
+/********************************
+*** Scoreboard
+***********************************/
+
+#scores {
+  display: flex;
+  width: 70%;
+  background-color: teal;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+#player1,
+#player2 {
+  width: 40%;
+  background-color: pink;
+  margin: 5px;
+  text-align: center;
 }
