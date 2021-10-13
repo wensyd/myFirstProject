@@ -23,7 +23,7 @@ h1 {
   font-family: 'Purple Purse', cursive;
   font-size: 5em;
   text-align: center;
-  color: brown;
+  color: #dd8a87be;
   margin-bottom: 0;
  
 }
@@ -80,6 +80,7 @@ h1 {
   font-weight: bolder;
   border-radius: 8px;
   box-shadow: 5px 5px 5px grey;
+  cursor: pointer;
 }
 
 #answerList {
@@ -140,4 +141,5 @@ h1 {
   margin: 10px auto;
   border-radius: 5px;
   box-shadow: 2px 2px 2px lightgrey;
+  cursor: pointer;
 }

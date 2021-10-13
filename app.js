@@ -22,29 +22,28 @@ const $d = $("#d");
 const $p1score = $("#player1 h4");
 const $p2score = $("#player2 h4");
 
-console.log($p2score, $p1score);
+console.log($p1score, $p2score);
 
 /************************************
  *  Functions
  ***********************************/
 
 const chooseAnswer = (event, question) => {
-        console.log(event)
-    if(event.target.innerText === question.answer) {
-        if(stateScores.which) {
-            stateScores.player1++
-            stateScores.which = !stateScores.which
-        }else {
-            stateScores.player2++
-            stateScores.which =!stateScores.which
-        }
-        setBoard(questions)
+  console.log(event);
+  if (event.target.innerText === question.answer) {
+    if (stateScores.which) {
+      stateScores.player1++;
+      stateScores.which = !stateScores.which;
     } else {
-        setBoard(questions)
-        stateScores.which = !stateScores.which
+      stateScores.player2++;
+      stateScores.which = !stateScores.which;
     }
-}
-
+    setBoard(questions);
+  } else {
+    setBoard(questions);
+    stateScores.which = !stateScores.which;
+  }
+};
 
 const setBoard = (q) => {
   // this gets the random question
@@ -54,7 +53,7 @@ const setBoard = (q) => {
 
   // this updates the question
 
-  $question.text(randomQ.question)
+  $question.text(randomQ.question);
   $a.text(randomQ.a);
   $b.text(randomQ.b);
   $c.text(randomQ.c);
@@ -64,13 +63,22 @@ const setBoard = (q) => {
   $p1score.text(stateScores.player1);
   $p2score.text(stateScores.player2);
 
-  $("li").off() // this resets the previous answer so it starts fresh
-  $("li").on("click", (event) =>{
-      chooseAnswer(event, randomQ)
-  })
-
-
+  $("li").off(); // this resets the previous answer so it starts fresh
+  $("li").on("click", (event) => {
+    chooseAnswer(event, randomQ);
+  });
 };
+
+
+//refresh the game 
+
+const playAgain = () => {
+
+  const $playAgainBtn = $("button")
+
+}
+
+
 
 
 
@@ -85,6 +93,5 @@ $.ajax(URL).then((data) => {
   console.log(data);
   console.log(questions);
 
-  setBoard(questions) // this sets the board and loads the questions and answers
-
+  setBoard(questions); // this sets the board and loads the questions and answers
 });
