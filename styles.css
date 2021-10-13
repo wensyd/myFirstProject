@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   align-content: center;
   background-color: black;
-  height: 700px;
+  height: 750px;
   width: 100%;
   margin: 10px auto;
 }
@@ -20,8 +20,12 @@ body {
 ***********************************/
 
 h1 {
+  font-family: 'Purple Purse', cursive;
+  font-size: 5em;
   text-align: center;
   color: brown;
+  margin-bottom: 0;
+ 
 }
 
 /********************************
@@ -31,10 +35,12 @@ h1 {
 #question {
   width: 70%;
   padding: 30px;
-  border: 3px solid brown;
+  border: 3px solid #D3B9A5;
+  border-radius: 20%;
   background-color: sienna;
+  text-align: center;
+  font-size: 1.5em;
   color: white;
-  font-size: 20px;
   margin: 10px auto;
 }
 
@@ -46,7 +52,9 @@ h1 {
   width: 50%;
   margin: 10px auto;
   color: white;
-  background-color: violet;
+  background-color: #545348;
+  border-radius: 20%;
+  border: 6px solid #D3B9A5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,28 +68,24 @@ h1 {
   width: 100%;
   justify-content: space-evenly;
   list-style: none;
-  
 }
 
 #answer ul li {
   width: 40%;
   height: 40px;
-  background-color: purple;
+  background-color: #5D2523;
   padding-top: 15px;
   text-align: center;
   margin: 5px;
   font-weight: bolder;
   border-radius: 8px;
-  box-shadow: 5px 5px 5px  grey;
+  box-shadow: 5px 5px 5px grey;
 }
 
 #answerList {
-    display: flex;
-    align-content: flex-start;
-
+  display: flex;
+  align-content: flex-start;
 }
-
-
 
 /********************************
 *** Scoreboard
@@ -90,7 +94,10 @@ h1 {
 #scores {
   display: flex;
   width: 70%;
-  background-color: teal;
+  background-color:  #5D2523;
+  border: 7px solid #D3B9A5;
+  border-radius: 20%;
+
   justify-content: center;
   margin: 10px auto;
   padding: 20px;
@@ -99,7 +106,38 @@ h1 {
 #player1,
 #player2 {
   width: 40%;
-  background-color: pink;
+  background-color: #D3B9A5;
+  color: #545348;
+  font-size: 1.3em;
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 5%;
   margin: 5px;
   text-align: center;
+}
+
+
+/********************************
+*** Reset button
+***********************************/
+
+
+#playAgain{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+}
+#playAgainBtn {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  background-color: #182528;
+  color: #D3B9A5;
+  width: 150px;
+  height: 30px;
+  padding: 5px 0px 1px 40px;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px lightgrey;
 }
