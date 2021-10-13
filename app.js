@@ -69,6 +69,12 @@ const setBoard = (q) => {
   });
 };
 
+// winning function// message alert
+
+Math.max($p1score, $p2score)
+
+
+
 
 //refresh the game 
 
