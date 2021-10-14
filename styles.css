@@ -10,10 +10,21 @@ body {
   flex-direction: column;
   align-content: center;
   background-color: black;
+  border-radius: 10%;
   height: 90%;
   width: 100%;
   margin: 10px auto;
 }
+
+
+@media (min-width: 1024px) {
+  #main{
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+
 
 /********************************
 *** HEADING
@@ -49,7 +60,7 @@ h1 {
 ***********************************/
 
 #answer {
-  width: 50%;
+  width: 70%;
   margin: 10px auto;
   color: white;
   background-color: #545348;
@@ -63,6 +74,7 @@ h1 {
 
 #answer ul {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
   width: 100%;
@@ -71,7 +83,8 @@ h1 {
 }
 
 #answer ul li {
-  width: 40%;
+
+  width: 50%;
   height: 40px;
   background-color: #5D2523;
   padding-top: 15px;
@@ -81,6 +94,10 @@ h1 {
   border-radius: 8px;
   box-shadow: 5px 5px 5px grey;
   cursor: pointer;
+  transition:  .3s ease-in-out;
+}
+#answer ul li:hover{
+  width: 400px;
 }
 
 #answerList {

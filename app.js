@@ -49,7 +49,7 @@ const setBoard = (q) => {
   // this gets the random question
 
   const randomIndex = Math.floor(Math.random() * q.length);
-  const randomQ = q[randomIndex];
+  const randomQ = q[randomIndex];+
 
   // this updates the question
 
@@ -80,10 +80,12 @@ Math.max($p1score, $p2score)
 
 const playAgain = () => {
 
-  const $playAgainBtn = $("button")
-
+  window.location.reload();
 }
 
+const $playAgainBtn = $("#playAgainBtn")
+
+$playAgainBtn.on("click", playAgain);
 
 
 
