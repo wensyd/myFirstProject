@@ -3,7 +3,8 @@
 
 ## Introduction
 
-Explain what your project is here and what it does, etc.
+
+Hello and welcome to the Dinosaur Trivia Game! Here you will be asked questions and given four answer choices to pick from. This is a two player game that can be played on any device that supports a web browser. 
 
 ## technologies used
 
@@ -14,28 +15,7 @@ Explain what your project is here and what it does, etc.
 
 ## Challenges
 
-#### I have trouble with 
-
-My code looked like this
-
-```js
-console.log("hello")
-```
-
-It was a giving me a problem... when it was fixed it looked like this:
-
-```js
-console.log("goodbye")
-````
-
-#### Example Table
-
-| Column1 | Column2 |
-|---------|---------|
-| thing1 | thing2 |
-| yadda1 | yadda2 |
-
-
+Some challenges I had were with the design size. I fixed this by adjusting the display, width, height of the main elements. I have had no major bugs or issues with the build of this trivia game. 
 
 ## Color Pallette
 

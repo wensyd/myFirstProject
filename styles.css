@@ -17,13 +17,6 @@ body {
 }
 
 
-@media (min-width: 1024px) {
-  #main{
-    display: flex;
-    flex-flow: column wrap;
-  }
-}
-
 
 
 /********************************

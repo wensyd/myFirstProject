@@ -5,7 +5,7 @@
 const stateScores = {
   player1: 0,
   player2: 0,
-  currentQuestion: {},
+  which: true,
 };
 
 let questions = [];
@@ -49,11 +49,12 @@ const setBoard = (q) => {
   // this gets the random question
 
   const randomIndex = Math.floor(Math.random() * q.length);
-  const randomQ = q[randomIndex];+
+  const randomQ = q[randomIndex];
+  +(
+    // this updates the question
 
-  // this updates the question
-
-  $question.text(randomQ.question);
+    $question.text(randomQ.question)
+  );
   $a.text(randomQ.a);
   $b.text(randomQ.b);
   $c.text(randomQ.c);
@@ -69,26 +70,15 @@ const setBoard = (q) => {
   });
 };
 
-// winning function// message alert
-
-Math.max($p1score, $p2score)
-
-
-
-
-//refresh the game 
+//refresh the game
 
 const playAgain = () => {
-
   window.location.reload();
-}
+};
 
-const $playAgainBtn = $("#playAgainBtn")
+const $playAgainBtn = $("#playAgainBtn");
 
 $playAgainBtn.on("click", playAgain);
-
-
-
 
 /*******************************************
  *  Ajax and url to fetch data for the game
